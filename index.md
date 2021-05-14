@@ -9,7 +9,8 @@
 * `tolower`, `toupper`
 * `isdigit`, `isalpha`, `isalnum`, ...
 * split строки "из коробки" нет!
-* `find(s, pos)` -> pos первого символа если s найдена, или `string::npos`. Также `rfind`
+* `find(s, pos) -> pos` первого символа если s найдена, или `string::npos`. Также `rfind`
+* `substr(pos, count) -> string`
 * Парсинг чисел в строку: `stoi`, `stol`, `stoll`; `stoul`, `stoull`; `stof`, `stod`, `stold`. Сигнатура `int stoi(const string&, size_t* chars_processed=0, int base=10)`
 
 ### pair<T1, T2>
