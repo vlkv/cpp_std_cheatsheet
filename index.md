@@ -10,6 +10,7 @@
 * `isdigit`, `isalpha`, `isalnum`, ...
 * split строки "из коробки" нет!
 * `find(s, pos)` -> pos первого символа если s найдена, или `string::npos`. Также `rfind`
+* Парсинг чисел в строку: `stoi`, `stol`, `stoll`; `stoul`, `stoull`; `stof`, `stod`, `stold`. Сигнатура `int stoi(const string&, size_t* chars_processed=0, int base=10)`
 
 ### pair<T1, T2>
 * Создание `make_pair(t1, t2)`
