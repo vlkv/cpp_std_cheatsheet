@@ -8,7 +8,27 @@
 * `operator+` склеить строки
 * `tolower`, `toupper`
 * `isdigit`, `isalpha`, `isalnum`, ...
-* split строки "из коробки" нет!
+* split строки "из коробки" нет! Вот решение из find+substr:
+```
+vector<string> split(string path, char delim) {
+    vector<string> result;
+    int i = 0;
+    int j = 0;
+    while (i < path.size()) {
+        j = path.find(delim, i);
+        if (j != string::npos) {
+            auto tmp = path.substr(i, j - i);
+            result.push_back(tmp);
+            i = j + 1; // j + delim size
+        } else {
+            auto tmp = path.substr(i, path.size() - i);
+            result.push_back(tmp);
+            break;
+        }
+    }
+    return result;
+}
+```
 * `find(s, pos) -> pos` первого символа если s найдена, или `string::npos`. Также `rfind`
 * `substr(pos, count) -> string`
 * Парсинг чисел в строку: `stoi`, `stol`, `stoll`; `stoul`, `stoull`; `stof`, `stod`, `stold`. Сигнатура `int stoi(const string&, size_t* chars_processed=0, int base=10)`
