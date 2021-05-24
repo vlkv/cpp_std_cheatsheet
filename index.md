@@ -151,4 +151,8 @@ rand() % 10; // даст число  [0, 10)
 ```
 
 * The new C++11 (since) way:
+    TODO
     
+## Math
+* std::gcd - greatest common divisor, gcd(12, 18) = 6 // 12=2*2*3, 18=2*3*3, 6=2*3
+* std::lcm - least common multiple, lcm(12, 18) = 36 // 12=2*2*3, 18=2*3*3, 36=2*2*3*3
