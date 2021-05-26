@@ -102,6 +102,8 @@ using HashSet = unordered_set<pair<int, int>, PairHash>;
 ```
 
 ### set - это tree set
+* Элементы set константные (как и ключи в map)
+* Задать кастомный компаратор можно при помощи кастомного "меньше": `struct { bool operator()(const T& a, const T& b) {...} }`
 
 ### span<T> - это абстракция для `T*` или `const T*` 
 где `T*` или `const T*` обычно указывают на область памати с идущими подряд элементами `T` (или `const T`).
