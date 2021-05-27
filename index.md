@@ -115,7 +115,8 @@ using HashSet = unordered_set<pair<int, int>, PairHash>;
 ## Алгоритмы
 * `sort(s.begin(), s.end())`
 * в обратном порядке (лямбда это `operator<`):
-`sort(s.begin(), s.end(), [](int a, int b) { return a > b; })`
+  * `sort(s.begin(), s.end(), [](int a, int b) { return a > b; })`
+  * `sort(s.begin(), s.end(), std::greater<int>())`
 ----
 * `find`
 * `find_if(s.begin(), s.end(), [](int a) { return a == 42; })`
