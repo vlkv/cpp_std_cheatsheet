@@ -87,6 +87,11 @@ priority_queue<int, vector<int>, decltype(cmp)> pq(cmp);
 
 ### map - это tree map
 * insert(key, value) возвращает pair<iterator, bool>, где bool - это была вставка или нет.
+* Чтобы использовать кастомный компаратор:
+```
+auto cmp = [](const Point &lhs, const Point &rhs) { return lhs.y < rhs.y; };
+map<Point, double, decltype(cmp)> mapObj(cmp);
+```
 
 ### unordered_set - это hash set
 Чтобы сделать unordered_set для кастомного типа, надо определить hash функцию. Самый простой способ:
