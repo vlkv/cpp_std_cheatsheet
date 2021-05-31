@@ -108,7 +108,6 @@ using HashSet = unordered_set<pair<int, int>, PairHash>;
 
 ### set - это tree set
 * Элементы set константные (как и ключи в map)
-* Задать кастомный компаратор можно при помощи кастомного "меньше": `struct { bool operator()(const T& a, const T& b) {...} }`
     
 ### bitset - множество бит фиксированного размера
 
