@@ -118,6 +118,10 @@ using HashSet = unordered_set<pair<int, int>, PairHash>;
 * итерироваться по спану `for (auto& num : nums)`
 * использовать алгоритмы `find_if(nums.begin(), nums.end(), a_predicate)`
 
+## Iterators
+* list, map, multimap, set and multiset support **bidirectional iterators**.
+* list (and forward_list) iterators invalidate when corresponding item is deleted.
+    
 ## Алгоритмы
 * `sort(s.begin(), s.end())`
 * в обратном порядке (лямбда это `operator<`):
