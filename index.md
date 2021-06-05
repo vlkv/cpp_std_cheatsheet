@@ -128,8 +128,17 @@ using HashSet = unordered_set<pair<int, int>, PairHash>;
   * `sort(s.begin(), s.end(), [](int a, int b) { return a > b; })`
   * `sort(s.begin(), s.end(), std::greater<int>())`
 ----
+Двоичный поиск
+* `lower_bound(begin, end, elem_to_find, cmp)` - возвращает итератор на ближайший элемент, равный или бОльший чем elem_to_find
+* `upper_bound(begin, end, elem_to_find, cmp)` - возвращает итератор на ближайший элемент, бОльший чем elem_to_find
+* `binary_search(begin, end, elem_to_find)` - возвращает найдено или нет (bool) значение, равное elem_to_find
+----
+Линейный поиск
 * `find`
 * `find_if(s.begin(), s.end(), [](int a) { return a == 42; })`
+----
+* max, min - работают для двух чисел или initializer list-ов
+* max_element, min_element - работают для контейнеров (принимают два итератора begin и end)
 ----
 * `all_of`
 * `any_of`
@@ -137,6 +146,8 @@ using HashSet = unordered_set<pair<int, int>, PairHash>;
 ----
 * `count`
 * `count_if`
+
+
 
 ## Numeric Limits
 В хедере limits.h есть шаблон numeric_limits, примеры использования:
