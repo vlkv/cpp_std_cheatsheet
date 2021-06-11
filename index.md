@@ -58,6 +58,7 @@ vector<string> split(string path, char delim) {
 ### vector
 * push_back, push_front
 * `erase(it1) -> it2` - стирает it1 и возвращает it2 (следующий после удаленного).
+* `insert(it_dst, it_begin, it_end)` - вставить диапазон из другого контейнера в этот вектор (в позицию it_dst).
 
 ### list, forward_list
 * Итераторы инвалидируются только когда удаляется соотв. элемент
